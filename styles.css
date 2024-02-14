@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(150, 150, 211);
+    background-color: rgb(70, 70, 77);
 }
 
 main {
@@ -7,13 +7,37 @@ main {
     width: 95vw;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
+input {
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 150px;
+    border-style: none;
+    border-radius: 20px;
+    color: white;
+}
+
 .element {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 40%;
     height: 40%;
+    color: white;
 }
 
 #card {
@@ -21,25 +45,44 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    height: 300px;
+    height: 400px;
     width: 500px;
     margin: auto;
     background-color: white;
     border-radius: 20px;
+    background-color: rgb(112, 112, 117);
+    box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 #card-top {
+    background-color: rgb(173, 0, 0);
+}
+
+#card-top:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+#card-mid {
     display: inline-flex;
     flex-wrap: wrap;
     align-content: space-around;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    height: 50%;
 }
 
 #card-bottom {
-    display: flex;
+    background-color: rgb(0, 128, 0);
+}
+
+#card-bottom:hover {
+    background-color: rgb(0, 185, 0);
+}
+
+#time-output {
+    margin: 0;
 }
