@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(150, 150, 211);
+}
+
+main {
+    height: 95vh;
+    width: 95vw;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 40%;
+}
+
+#card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#card-top {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+#card-bottom {
+    display: flex;
+}

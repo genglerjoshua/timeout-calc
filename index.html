@@ -9,6 +9,30 @@
     <script src="/index.js" defer></script>
 </head>
 <body>
-
+    <main>
+        <section id="card">
+            <div id="card-top">
+                <div id="reg-time" class="element">
+                    <p>Regular Time Hours</p>
+                    <input id="reg-input" placeholder="Hours in Decimal">
+                </div>
+                <div id="over-time" class="element">
+                    <p>OverTime Hours</p>
+                    <input id="ot-input" placeholder="Hours in Decimal">
+                </div>
+                <div id="lunch-in" class="element">
+                    <p>Time Clocked In after Lunch</p>
+                    <input id="lunch-input" placeholder="Time format hh:mm">
+                </div>
+                <div id="clock-out" class="element">
+                    <p>Leave at this time</p>
+                    <p id="time-output">Temp</p>
+                </div>
+            </div>
+            <div id="card-bottom">
+                Calculate
+            </div>
+        </section>
+    </main>
 </body>
 </html>
