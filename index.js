@@ -32,7 +32,7 @@ function calc() {
     let decimalMinutes = (time - hour) * 60;
     let minute = Math.round(decimalMinutes);
 
-    let convertedTime = hour + ":" + (minute < 10 ? "0" : "") + minute + "PM";
+    let convertedTime = (hour > 12 ? (hour - 12) : hour) + ":" + (minute < 10 ? "0" : "") + minute + "PM";
 
     timeOutput.textContent = convertedTime;
 };
