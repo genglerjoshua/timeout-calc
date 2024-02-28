@@ -21,6 +21,7 @@ function resetInputs() {
 calculate.addEventListener("click", calc);
 
 function calc() {
+
     let [hours, minutes] = lunchInput.value.split(":").map(Number);
     let clockIn = hours + (minutes / 60);
     let regTimeNum = parseFloat(regInput.value);
@@ -32,7 +33,12 @@ function calc() {
     let decimalMinutes = (time - hour) * 60;
     let minute = Math.round(decimalMinutes);
 
-    let convertedTime = (hour > 12 ? (hour - 12) : hour) + ":" + (minute < 10 ? "0" : "") + minute + "PM";
-
-    timeOutput.textContent = convertedTime;
+    if (regInput.value == "" || otInput.value == "" || lunchInput.value == "") {
+        timeOutput.textContent = "Blank Input"
+        timeOutput.style.color = "red";
+    } else {
+        let convertedTime = (hour > 12 ? (hour - 12) : hour) + ":" + (minute < 10 ? "0" : "") + minute + "PM";
+        timeOutput.style.color = "white";
+        timeOutput.textContent = convertedTime;
+    }
 };
